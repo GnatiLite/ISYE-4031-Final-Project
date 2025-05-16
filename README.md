@@ -1,6 +1,30 @@
 # CO₂ Emissions Analysis Project
 
-This project analyzes the factors influencing a country’s CO₂ emissions and forecasts future emissions using regression and time-series models.
+This project explores the key economic, demographic, and environmental factors that influence a country's annual CO₂ emissions, using data from the World Bank. We applied both regression and time series methods to understand historical patterns and forecast future emissions in the absence of the COVID-19 pandemic.
+
+## Objectives
+- Identify key drivers of CO₂ emissions across 165 countries.
+- Analyze trends using linear regression with log-transformed variables.
+- Forecast emissions using exponential smoothing models.
+
+## Key Insights
+- **GDP** and **Population** are the strongest predictors of CO₂ emissions.
+- Linear regression models improved with added variables and transformations.
+- **Exponential smoothing** produced accurate forecasts, especially for recent years and large emitters like China.
+
+## Methods
+- Multiple Linear Regression (8 models with incremental variables)
+- Log transformation and dummy variable encoding
+- Time series analysis for top 6 emitters: China, USA, India, Russia, Japan, Brazil
+- Ljung-Box tests for autocorrelation
+
+## Technologies
+- Python (pandas, statsmodels, matplotlib)
+- World Bank data (1989–2019)
+
+## Limitations
+- Sudden events like pandemics are difficult to capture.
+- Future work could incorporate fossil fuel data and more advan
 
 ## Project Structure
 
